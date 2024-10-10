@@ -11,6 +11,7 @@ app.use(
     ":method :url :status :res[content-length] - :response-time ms :content"
   )
 );
+app.use(express.static("dist"));
 
 let persons = [
   {
